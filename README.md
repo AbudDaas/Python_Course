@@ -2,7 +2,7 @@
 
 ![Python Image](img/python.jpg "My Account Image")
 
-:simple_smile:
+:relaxed:
 
 ---
 
