@@ -24,6 +24,8 @@ This file to explain Operators. [link](Tutorial/2_Operators.py)
 
 `+ - * / < > >= <=`
 
++ - * / 
+
 ---
 
 ## 3. String
@@ -40,6 +42,13 @@ This file to explain Lists. [Link]
 
 `myList = [1, 1.5, "a"]`
 `myList.appen("m")`
+`print(myList)`
+
+Output
+
+```
+[1, 1.5, "a", "m"]
+```
 
 ---
 
