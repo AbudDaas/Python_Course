@@ -38,7 +38,7 @@ This file to explain Strings. [link](Tutorial/3_Strings.py)
 
 ## 4. List
 
-This file to explain Lists. [Link]
+This file to explain Lists. [Link](tutorial/4_Listis.py)
 
 `myList = [1, 1.5, "a"]`
 `myList.appen("m")`
@@ -54,8 +54,10 @@ Output
 
 ## 5. Tuple
 
-This file to explain Tuples. [Link]
+This file to explain Tuples. [Link](tutorial/5_tuples.py)
 `myTuple = (1, 1.5, "a")`
+---
+
 
 ---
 

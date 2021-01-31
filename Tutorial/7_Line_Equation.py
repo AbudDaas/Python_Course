@@ -1,35 +1,45 @@
 import matplotlib.pyplot as plt
-# List of [(x,y)]
-#testList =[(0, 6), (1, 2), (2, 7), (3, 5), (4, 3), (5, 9)]
+import numpy as np
 
-#x_ada = [x[0] for x in testList]
-#y_ada = [x[1] for x in testList]
+# Lines
+testList0 =[(1, 8), (5, 6)] # Original Line
+testList1 =[(0, 8), (4, 6)] # Shifted X-Axis
+testList2 =[(1, 7), (5, 5)] # Shifted Y-Axis
 
-#plt.scatter(x_ada,y_ada)
-#plt.scatter(*zip(*testList)) # scatter([x0,x1,...,xn], [y0,y1,...,yn]) --> zip
-#plt.plot(x_ada, y_ada, 'ro') # Red
-#plt.plot(x_ada, y_ada, 'b-') # Blue
+crossLine = [(1,6),(3, 8)]
+# Edges
+edge1 = [(1, 8), (0, 8), (1, 7)]#, (1, 8)]
+edge2 = [(5, 6), (4, 6), (5, 5), (5, 6)]
 
-#plt.title('Random Figure')
-#plt.xlabel('X-Axis')
-#plt.ylabel('Y-Axis')
-#plt.grid()
-#plt.show()
+# coordinates
+x_0 = [x[0] for x in testList0]
+y_0 = [x[1] for x in testList0]
 
-testList =[(7, 1), (7, 4),]
+x_1 = [x[0] for x in testList1]
+y_1 = [x[1] for x in testList1]
 
-import matplotlib.pyplot as plt
+x_2 = [x[0] for x in testList2]
+y_2 = [x[1] for x in testList2]
 
-x_ada = [x[0] for x in testList]
-y_ada = [x[1] for x in testList]
+# draw Points
+plt.scatter(x_0,y_0)
+plt.scatter(x_1,y_1)
+plt.scatter(x_2,y_2)
+# plt.scatter(*zip(*testList2)) # scatter([x0,x1,...,xn], [y0,y1,...,yn]) --> zip
 
-plt.scatter(x_ada,y_ada)
-plt.scatter(*zip(*testList)) # scatter([x0,x1,...,xn], [y0,y1,...,yn]) --> zip
-plt.plot(x_ada, y_ada, 'ro') # Red
-plt.plot(x_ada, y_ada, 'b-')
+# plot Lines
+plt.plot(x_0, y_0, 'b-', label='Original') # Blue
+plt.plot(x_1, y_1, 'r-', label='X-Shift') # Red
+plt.plot(x_2, y_2, 'y-', label='Y-Shift') # Gren
+# plt.plot(*zip(*testList2), 'r-') # Red
+
+plt.plot(*zip(*edge1), 'c')
+plt.plot(*zip(*edge2), 'c')
+plt.plot(*zip(*crossLine), 'rx--')
 
 plt.title('Schematic diagram')
-plt.xlabel('X-Axis')
-plt.ylabel('Y-Axis')
+plt.xlabel('X-satır')
+plt.ylabel('Y-satır')
+plt.legend()
 plt.grid()
 plt.show()
